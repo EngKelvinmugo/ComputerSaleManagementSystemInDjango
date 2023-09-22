@@ -1,0 +1,2 @@
+# ComputerSaleManagementSystemInDjango
+ComputerSaleManagementSystemInDjango
