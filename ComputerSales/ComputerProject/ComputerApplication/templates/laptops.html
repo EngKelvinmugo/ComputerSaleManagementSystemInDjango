@@ -1,0 +1,108 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Laptop Store</title>
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+	<header>
+		<h1>KESTECH IT SOLUTIONS LAPTOP STORES</h1>
+		<nav>
+			<ul>
+				
+				<li><a href="{% url 'home'%}">Home</a></li>
+				<li><a href="{% url 'laptops'%}">Laptops</a></li>
+				<li><a href="{% url 'about'%}">About Us</a></li>
+				<li><a href="{% url 'contact'%}">Contact Us</a></li>
+				<li><a href="{% url 'login'%}">Login</a></li>
+				
+				<li><a href="{% url 'register'%}">Register</a></li>
+				
+			</ul>
+		</nav>
+		<div>
+			<!-- <img src="/static/img/NEW PHONE LOGGO.png" alt="Image" style="float:right margin-right: 10px;width: 3%; height: auto;">
+			<p style="font-weight: bold;">0724648472</p>   -->
+			
+			
+	</header>
+	
+	<main>
+		<section class="laptops">
+			<h2>MAKE AN ORDER WE DELIVER				
+			</h2>
+			<ul>
+				<li>
+					<img src="/static/img/HP Refurbished EliteBook 840 G3 Intel Core I5 6th Gen 8GB, 256GB SSD - Silver 25,000.jpg" alt="Dell latitude 3340"width="300" height="300">
+					<h3>HP Refurbished EliteBook 840 G3 </h3>
+					<p>Core I5 6th Gen 8GB</p>
+					<p> SSD - Silver</p>
+					<p>Price: ksh 25,999</p>
+					<a href="/templates/contact.html" class="button">Buy Now</a>
+				</li>
+				<li>
+					<img src="/static/img/Hp revolve 810 g3.jpg" alt="dell latitude 7280"width="300" height="300">
+					<h3>Hp revolve 810 g3</h3>
+					<p>Price: ksh 24,999</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li>
+					<img src="/static/img/hp 1030 g3.jpg"alt="hp 1030 g3"width="300" height="300">
+					<h3>hp 1030 g3</h3>
+					<p>Price: ksh 47,999</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li>
+					<img src="/static/img/dell latitude 7280.jpg" alt="dell latitude 7280"width="300" height="300">
+					<h3>dell latitude 7280</h3>
+					<p>Price: ksh 24,999</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li>
+					<img src="/static/img/hinkpad X250 Intel Core I5, 8GB RAM, 500GB HDD, 12.5'' Black.jpg" alt="Lenovo ThinkPad T470"width="300" height="300">
+					<h3>Lenovo ThinkPad T470</h3>
+					<p>Price: ksh 20,500</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li>
+					<img src="/static/img/Lenovo G50.jpg" alt="Lenovo G50.jpg"width="300" height="300">
+					<h3>Lenovo G50</h3>
+					<p>Price: ksh 24,999</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li>
+					<img src="/static/img/Lenovo V14-Intel® Celeron®-4GB RAM-1TB HDD-Windows 10-14 Inch Display-Grey.jpg" alt="dell latitude 7280"width="300" height="300">
+					<h3>Lenovo V14-Intel®</h3>
+					<p>Price: ksh 24,999</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li>
+					<img src="/static/img/HP PROBOOK 430 G4 2.7GHZ CORE I5 (7TH GEN) 8GB RAM 500GB HDD.jpg" alt="Dell latitude 3340"width="300" height="300">
+					<h3>HP PROBOOK 430 G4</h3>
+					<p>Price: ksh 20,999</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li>
+					<img src="/static/img/WhatsApp Image 2023-02-06 at 12.09.31.jpg" alt="dell latitude 7280"width="300" height="300">
+					<h3>dell latitude 7280</h3>
+					<p>Price: ksh 24,999</p>
+					<a href="#">Buy Now</a>
+				</li>
+								
+				<li>
+					<img src="/static/img/WhatsApp Image 2023-02-06 at 12.09.31.jpg" alt="dell latitude 7280"width="300" height="300">
+					<h3>dell latitude 7280</h3>
+					<p>Price: ksh 24,999</p>
+					<a href="#">Buy Now</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 computers Ordering system. All Rights Reserved.</p>
+	</footer>
+</body>
+</html>

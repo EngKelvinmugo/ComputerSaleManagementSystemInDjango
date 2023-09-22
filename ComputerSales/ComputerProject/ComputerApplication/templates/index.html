@@ -1,0 +1,55 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Laptop Store</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+	<style>
+nav ul {
+	list-style: none;
+	margin: 1%;
+	padding: 0;
+	display: flex;
+align-items: center;
+
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>KESTECH IT SOLUTIONS LAPTOP STORES</h1>
+		
+		<nav>
+			<ul>
+				
+				<li><a href="{% url 'home'%}">Home</a></li>
+				<li><a href="{% url 'laptops'%}">Laptops</a></li>
+				<li><a href="{% url 'about'%}">About Us</a></li>
+				<li><a href="{% url 'contact'%}">Contact Us</a></li>
+				<li><a href="{% url 'login'%}">Login</a></li>
+				
+				<li><a href="{% url 'register'%}">Register</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+
+		<main>
+		  <h2>Welcome to Laptop Sales</h2>
+		  <p>We sell the latest laptops and accessories at affordable prices.</p>
+		  <a href="{% url 'laptops'%}" class="button">View Laptops</a>
+		</main>
+		<footer>
+		  <p>&copy; </p>
+		</footer>
+	  </body>
+	</html>
+	
+
+
+
+
+
+
+	

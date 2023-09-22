@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laptop Sales - Cart</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/salespage.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Laptop Sales</h1>
+			<nav>
+				<ul>
+					<li><a href="/templates/index.html">Home</a></li>
+					<li><a href="/templates/products.html">Products</a></li>
+					<li><a href="/templates/cart.html">Cart</a></li>
+					<li><a href="/templates/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<h2>Your Cart</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Product</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Total</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Laptop Model 1</td>
+						<td>$899.99</td>
+						<td><input type="number" min="1" value="1"></td>
+						<td>$899.99</td>
+						<td><button class="remove-button">Remove</button></td>
+					</tr>
+					<tr>
+						<td>Laptop Model 2</td>
+						<td>$799.99</td>
+						<td><input type="number" min="1" value="1"></td>
+						<td>$799.99</td>
+						<td><button class="remove-button">Remove</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="total">
+				<p>Total: $1,699.98</p>
+				<button class="checkout-button">Checkout</button>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 Laptop Sales</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+.register {
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+.register a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(9, 80, 99);
+    border: none;
+    border-radius: 7px;
+    padding: 2px 4px;
+}
+
+.register h2{
+    color: rgb(64, 201, 201);
+}
+header {
+	background-color: #080202;
+	color: #fff;
+	padding: 10px;
+	font-weight:150%;
+	  }
+	  
+
+
+
+
+nav ul {
+	list-style: none;
+	
+
+	display: flex;
+}
+nav ul {
+
+	 
+		text-align: center;
+	  }
+
+
+nav li {
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+.right {
+	position: absolute;
+	right: 0px;
+	width: 300px;
+	border: 3px solid #73AD21;
+	padding: 10px;
+  }
+
+
+.register .container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.register .register-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   height: 100%;
+    
+}
+
+
+.register .register-image img {
+    width: 500px;
+    height: auto;
+}
+
+ .inputs  .form .email input {
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+    padding: 0 20px;
+}
+
+
+.inputs  .form .username input {
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+    padding: 0 20px;
+}
+
+
+.inputs  .form .password input {
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+    padding: 0 20px;
+}
+
+.inputs .form .register input {
+    margin-top: 20px;
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(80, 222, 222);
+    cursor: pointer;
+    font-weight: 800;
+    color: #fff;
+}
+
+.inputs .form .register input:hover {
+    background-color: rgb(9, 80, 99);
+    transition: 0.4s ease;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .register .container {
+        height: 70vh;
+       
+    }
+    .register .register-image{
+        display: none;
+    }
+    .inputs  .form .email input {
+        width: 260px;
+    }
+
+    .inputs  .form .username input{
+        width: 260px;
+    }
+
+    .inputs  .form .password input {
+        width: 260px;
+    }
+
+    .inputs  .form .register input {
+        width: 260px;
+    }
+}

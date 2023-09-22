@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'css/register.css'%}">
+
+
+
+    <title>Laptops Sale</title>
+ 
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+          <ul>
+            
+            <li><a href="{% url 'home'%}">Home</a></li>
+            <li><a href="{% url 'laptops'%}">Laptops</a></li>
+            <li><a href="{% url 'about'%}">About Us</a></li>
+            <li><a href="{% url 'contact'%}">Contact Us</a></li>
+            <li><a href="{% url 'login'%}">Login</a></li>
+            
+            <li><a href="{% url 'register'%}">Register</a></li>
+            
+          </ul>
+          </nav>
+      </header>
+    <section>
+        <div class="register">
+            <div class="container">
+                <div class="register-container">
+                    <div class="register-image">
+                        
+                    </div>
+                    <div class="registration-form">
+                        <div class="header">
+                            <h2>REGISTER</h2>
+                         </div>
+                         <form method="POST" action="">
+                            {% csrf_token %}
+                             <div class="inputs">
+                                 <div class="form">
+                                     <h3>Email address</h3>
+                                     <div class="email">
+                                        {{ form.email }}
+                                     </div>
+                                 </div>
+                                 <div class="form">
+                                    <h3>User name</h3>
+                                    <div class="username">
+                                        {{ form.username }}
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <h3>Enter password</h3>
+                                    <div class="password">
+                                        {{ form.password1 }}
+                                    </div>
+                                </div>
+
+                                <div class="form">
+                                    <h3>Re-enter password</h3>
+                                    <div class="password">
+                                        {{ form.password2 }}
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <div class="register">
+                                      <input type="submit" name="Create Account" >
+                                    </div>
+                                </div>
+                             </div>
+                         </form>
+                         <p>Already have an Account <a href="{% url 'login'%}"> login</a></p>
+                         {{form.errors}}
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
